@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>United States Educational Attainment Choropleth Map</title>
+    <link rel="stylesheet" href="Prin's Choropleth Map.css">
+</head>
+<body>
+    <h1 id='title'>United States Educational Attainment<h1>
+
+    <div id='container'>
+        <svg id='canvas'>
+
+        </svg>
+
+        <div id='rightSide'>
+            <div id='tooltip'>
+
+            </div>
+
+            <svg id='legend'>
+                <g>
+                    <rect x='10' y='0' width='40' height='40' fill='#dadd98'></rect>
+                    <text x='60' y='20' fill='black'>Less than 15%</text>
+                </g>
+
+                <g>
+                    <rect x='10' y='40' width='40' height='40' fill='#71bc78'></rect>
+                    <text x='60' y='60' fill='black'>From 15% to 30%</text>
+                </g>
+
+                <g>
+                    <rect x='10' y='80' width='40' height='40' fill='#1db954'></rect>
+                    <text x='60' y='100' fill='black'>From 30% to 45%</text>
+                </g>
+
+                <g>
+                    <rect x='10' y='120' width='40' height='40' fill='#006400'></rect>
+                    <text x='60' y='140' fill='black'>More than 45%</text>
+                </g>
+            </svg>
+
+            <div id='description'>
+                Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)
+            </div><br>
+
+            <div id='source'>Source : 
+                <a href='https://www.ers.usda.gov/data-products/county-level-data-sets/download-data.aspx'>
+                    USDA Economic Research Service
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script defer src="Prin's Choropleth Map.js"></script>
+</body>
+</html>

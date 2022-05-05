@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    color: antiquewhite;
+    background-color: #2a2d2d;
+    min-height: 100%;
+    margin: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 36px;
+    color: antiquewhite;
+    text-transform: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#container {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+svg {
+    background-color: #305555;
+    padding: 10px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+#canvas {
+    min-width: 1000px;
+    min-height: 600px;
+}
+
+#rightSide {
+    margin-left: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#tooltip {
+    font-size: 22px;
+    color: antiquewhite;
+    width: auto;
+    height: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    visibility: hidden;
+}
+
+#legend {
+    font-size: 16px;
+    color: rgb(56, 58, 74);
+    max-width: 180px;
+    min-height: 160px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#description, #source {
+    font-size: 20px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#source a {
+    color: lightpink;
+    text-decoration: none;
+}
+
+.county:hover {
+    fill: azure;
+}
+
+g {
+    color: antiquewhite;
+}
